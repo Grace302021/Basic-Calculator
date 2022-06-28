@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <script>
+        alert('Basic Calculator');
+        alert('Please enter the operation you want to perform ');
+        let oper = prompt('+, -, *, /');
+        let x,y;
+        x = parseInt(prompt('Please enter the first number: '));
+        y = parseInt(prompt('Please enter the second number: ')); 
+        let a = x + y;
+        let b = x - y;
+        let c = x * y;
+        let d = x / y;
+        if (oper == '+'){
+            alert('The sum of given numbers is: ' + a);
+        } 
+        else if(oper == '-'){
+            alert('The difference of given numbers is: ' + b);
+        }
+        else if(oper == '*'){
+            alert('The product of given numbers is: ' + c);
+        }
+        else if(oper == '/'){
+            alert('The quotient of given numbers is: ' + d);
+        }
+        else{
+            alert('invalid');
+        }
+
+    </script>
+    
+</body>
+</html>
